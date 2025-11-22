@@ -371,7 +371,25 @@
     }
     /* CSS:CONTACT-END */
 
-    /* CSS:RWD-START */
+       /* CSS:RWD-START */
+    @media (max-width: 480px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+      }
+
+      .nav-brand {
+        white-space: normal; /* 允許品牌文字在 320px 換行，避免撐出畫面 */
+        font-size: 0.95rem;
+        line-height: 1.3;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+    }
+
     @media (min-width: 768px) {
       .nav {
         padding: 0.85rem 0;
@@ -427,6 +445,7 @@
       }
     }
     /* CSS:RWD-END */
+
   </style>
 </head>
 <body>
